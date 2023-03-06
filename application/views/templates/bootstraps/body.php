@@ -188,13 +188,13 @@
           </ul>
 
           <div class="owl-carousel owl-theme manual clients-carousel owl-no-narrow " style="padding-top:10px;padding-left:20px;">
-            <a id="login-btn" data-toggle="modal" data-target="#myModal" href="#" title="Bazar" class="client" style="width:50px!important;">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/icons/kategori/bazar.png" alt="partner homedepo">
-              <font style="padding-left:10px;">Bazar</font>
+            <a id="login-btn" data-toggle="modal" data-target="#myModal" href="#" title="Bazar" class="client" style="width:100px!important;">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/icons/kategori/bazar.jpg" alt="partner homedepo">
+              <!-- <font style="padding-left:10px;">Bazar</font> -->
             </a>
-            <a id="login-btn" data-toggle="modal" data-target="#myModal" href="#" title="Keuangan" class="client" style="width:50px!important;">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/icons/kategori/keuangan.png" alt="partner homedepo">
-              <font style="">Keuangan</font>
+            <a id="login-btn" data-toggle="modal" data-target="#myModal" href="#" title="Keuangan" class="client" style="width:100px!important;">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/icons/kategori/keuangan.jpg" alt="partner homedepo">
+              <!-- <font style="">Keuangan</font> -->
             </a>
           </div>
         </div>

@@ -1,150 +1,163 @@
 <style media="screen">
-/* body{
+  /* body{
   padding-bottom: 80px;
 } */
-#footer {
- position:fixed;
- bottom:0;
- width:100%;
- z-index: 5;
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
 
- font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbarmenutb {
-  overflow: hidden;
-  /* background-color: #333;
-  position: fixed; */
-  bottom: 0;
-  width: 100%;
-}
-
-.navbarmenutb a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 80px;
-  text-decoration: none!important;
-  font-size: 15px;
-}
-
-.navbarmenutb a:hover {
-  background-color: #1c2a5f;
-  color: #fff;
-}
-
-.navbarmenutb a.activemenu, .navbarmenutb a.menulogin {
-  float: right;
-  background-color: #1c2a5f;
-  color: white;
-}
-.navbarmenutb a.copyrightmenu {
-  color: white;
-}
-.navbarmenutb a.copyrightmenu:hover {
-  background-color: #db0c13;
-}
-
-.navbarmenutb .iconmenu {
-  display: none;
-}
-
-.loginmenu{
-  margin: 5px;
-}
-
-@media screen and (max-width: 600px) {
-  .navbarmenutb a:not(:first-child) {display: none;}
-  .navbarmenutb a.iconmenu {
-    float: right;
-    display: block;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
-  .navbarmenutb a.menulogin:not(:first-child) {display: block;}
+  .navbarmenutb {
+    overflow: hidden;
+    /* background-color: #333;
+  position: fixed; */
+    bottom: 0;
+    width: 100%;
+  }
+
+  .navbarmenutb a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none !important;
+    font-size: 15px;
+  }
+
+  .navbarmenutb a:hover {
+    background-color: #1c2a5f;
+    color: #fff;
+  }
+
+  .navbarmenutb a.activemenu,
   .navbarmenutb a.menulogin {
     float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navbarmenutb a {
-    padding: 14px 16px;
-  }
-  .navbarmenutb.responsivemenu .iconmenu {
-    position: absolute;
-    right: 0;
-    bottom:0;
-  }
-  .navbarmenutb.responsivemenu a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .navbarmenutb a.activemenu {
-    float: left;
-  }
-  .copyrightmenu{
-    text-align: center!important;
-    font-size:12px!important;
+    background-color: #1c2a5f;
+    color: white;
   }
 
-}
+  .navbarmenutb a.copyrightmenu {
+    color: white;
+  }
+
+  .navbarmenutb a.copyrightmenu:hover {
+    background-color: #db0c13;
+  }
+
+  .navbarmenutb .iconmenu {
+    display: none;
+  }
+
+  .loginmenu {
+    margin: 5px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbarmenutb a:not(:first-child) {
+      display: none;
+    }
+
+    .navbarmenutb a.iconmenu {
+      float: right;
+      display: block;
+    }
+
+    .navbarmenutb a.menulogin:not(:first-child) {
+      display: block;
+    }
+
+    .navbarmenutb a.menulogin {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbarmenutb a {
+      padding: 14px 16px;
+    }
+
+    .navbarmenutb.responsivemenu .iconmenu {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    .navbarmenutb.responsivemenu a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .navbarmenutb a.activemenu {
+      float: left;
+    }
+
+    .copyrightmenu {
+      text-align: center !important;
+      font-size: 12px !important;
+    }
+
+  }
 </style>
 
 <footer id="footer">
-    <!-- <div class="container"> -->
-      <!-- <div class="row"> -->
+  <!-- <div class="container"> -->
+  <!-- <div class="row"> -->
 
-        <!-- <p class="copyright-text text-right" style="padding-right:15px;">
-          © Copyright <a href="https://www.homedepo.co.id/" target="_blank"><?=$aplikasi->singkatan_unit?></a> 2022
+  <!-- <p class="copyright-text text-right" style="padding-right:15px;">
+          © Copyright <a href="https://www.homedepo.co.id/" target="_blank"><?= $aplikasi->singkatan_unit ?></a> 2022
         </p> -->
 
-        <div class="navbarmenutb" id="tbNavbar">
+  <div class="navbarmenutb" id="tbNavbar">
 
-          <a href="https://www.homedepo.co.id/" target="_blank" class="copyrightmenu" style="">
-            ©Copyright <?=$aplikasi->singkatan_unit?> 2022
-          </a>
+    <a href="https://www.homedepo.co.id/" target="_blank" class="copyrightmenu" style="">
+      ©Copyright <?= $aplikasi->singkatan_unit ?> 2022
+    </a>
 
-          <?php if (isset($nama_user)) { ?>
-
-
-
-          <a href="<?=base_url()?>buyer">
-            <i class="fa fa-user-o" style="font-size:13.5px;"></i>&nbsp; Saya
-          </a>
-          <a href="#notif">
-            <i class="fa fa-bell-o"></i>&nbsp; Notifikasi
-          </a>
-          <a href="<?=base_url()?>users/logout">
-            <i class="fa fa-sign-out"></i>&nbsp; Keluar
-          </a>
-
-          <a href="javascript:void(0);" style="font-size:15px;color:#fff;" class="iconmenu" onclick="myFunction()">&#9776;</a>
-
-          <?php }else{ ?>
-
-            <a href="javascript:void(0);" style="font-size:15px;" class="menulogin"  id="login-btn" data-toggle="modal" data-target="#myModal" title="Login / Masuk">
-              <i class="fa fa-sign-in"></i>
-              <span class=""> Masuk </span>
-            </a>
-
-          <?php } ?>
+    <?php if (isset($nama_user)) { ?>
 
 
 
-        </div>
+      <a href="<?= base_url() ?>buyer">
+        <i class="fa fa-user-o" style="font-size:13.5px;"></i>&nbsp; Saya
+      </a>
+      <a href="#notif">
+        <i class="fa fa-bell-o"></i>&nbsp; Notifikasi
+      </a>
+      <a href="<?= base_url() ?>users/logout">
+        <i class="fa fa-sign-out"></i>&nbsp; Keluar
+      </a>
 
-      <!-- </div> -->
-    <!-- </div> -->
+      <a href="javascript:void(0);" style="font-size:15px;color:#fff;" class="iconmenu" onclick="myFunction()">&#9776;</a>
+
+    <?php } else { ?>
+
+      <a href="javascript:void(0);" style="font-size:15px;" class="menulogin" id="login-btn" data-toggle="modal" data-target="#myModal" title="Login / Masuk">
+        <i class="fa fa-sign-in"></i>
+        <span class=""> Masuk </span>
+      </a>
+
+    <?php } ?>
+
+
+
+  </div>
+
+  <!-- </div> -->
+  <!-- </div> -->
 </footer>
 
 <!-- <footer id="footer">
   <div class="container">
     <div class="row">
       <div class="footer-ribbon">
-        <span><?=$aplikasi->singkatan_unit?></span>
+        <span><?= $aplikasi->singkatan_unit ?></span>
       </div>
 
       <div class="col-md-3">
@@ -176,9 +189,9 @@
         <div class="contact-details">
           <h4>Contact Information</h4>
           <ul class="contact">
-            <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong><br> <?=$aplikasi->alamat?></p></li>
-            <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong><br> <?=$aplikasi->no_telpon?></p></li>
-            <li><p><i class="fa fa-envelope-o"></i> <strong>Email:</strong><br> <a href="<?=$aplikasi->alamat_email?>"><?=$aplikasi->alamat_email?></a></p></li>
+            <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong><br> <?= $aplikasi->alamat ?></p></li>
+            <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong><br> <?= $aplikasi->no_telpon ?></p></li>
+            <li><p><i class="fa fa-envelope-o"></i> <strong>Email:</strong><br> <a href="<?= $aplikasi->alamat_email ?>"><?= $aplikasi->alamat_email ?></a></p></li>
             <li><p><i class="fa fa-clock-o"></i> <strong>Working Days/Hours:</strong><br> Mon - Sun / 9:00AM - 8:00PM</p></li>
           </ul>
         </div>
@@ -263,15 +276,15 @@
 
   <div class="footer-copyright">
     <div class="container">
-      <a href="<?=base_url()?>" class="logo">
-        <img alt="Porto Website Template" class="img-responsive" src="<?=base_url()?>assets/img/demos/logo-footer.png">
+      <a href="<?= base_url() ?>" class="logo">
+        <img alt="Porto Website Template" class="img-responsive" src="<?= base_url() ?>assets/img/demos/logo-footer.png">
       </a>
       <ul class="social-icons">
         <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
         <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
         <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
       </ul>
-      <img alt="Payments" src="<?=base_url()?>assets/img/demos/payments.png" class="footer-payment">
+      <img alt="Payments" src="<?= base_url() ?>assets/img/demos/payments.png" class="footer-payment">
       <p class="copyright-text">© Copyright 2021. All Rights Reserved.</p>
     </div>
   </div>
@@ -333,27 +346,28 @@
  -->
 
 
- <script type="text/javascript">
-   // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-   // (function(){
-   // var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-   // s1.async=true;
-   // s1.src='https://embed.tawk.to/62f4d62654f06e12d88e12eb/1ga6692a5';
-   // s1.charset='UTF-8';
-   // s1.setAttribute('crossorigin','*');
-   // s0.parentNode.insertBefore(s1,s0);
-   // })();
+<script type="text/javascript">
+  // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  // (function(){
+  // var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  // s1.async=true;
+  // s1.src='https://embed.tawk.to/62f4d62654f06e12d88e12eb/1ga6692a5';
+  // s1.charset='UTF-8';
+  // s1.setAttribute('crossorigin','*');
+  // s0.parentNode.insertBefore(s1,s0);
+  // })();
 
-   function myFunction() {
-      var x = document.getElementById("tbNavbar");
-      if (x.className === "navbarmenutb") {
-        x.className += " responsivemenu";
-      } else {
-        x.className = "navbarmenutb";
-      }
+  function myFunction() {
+    var x = document.getElementById("tbNavbar");
+    if (x.className === "navbarmenutb") {
+      x.className += " responsivemenu";
+    } else {
+      x.className = "navbarmenutb";
     }
- </script>
+  }
+</script>
 
 
 </body>
+
 </html>
