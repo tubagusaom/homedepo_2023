@@ -117,7 +117,11 @@
   <div class="navbarmenutb" id="tbNavbar">
 
     <a href="https://www.homedepo.co.id/" target="_blank" class="copyrightmenu" style="">
-      ©Copyright <?= $aplikasi->singkatan_unit ?> 2022
+      ©Copyright <?= $aplikasi->singkatan_unit ?>
+      <script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script>
     </a>
 
     <?php if (isset($nama_user)) { ?>
