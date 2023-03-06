@@ -89,7 +89,7 @@
 				<a href="#" style="padding-top:100px;">Hubungi Kami</a>
 				<!-- </span> -->
 				<ul>
-					<a class="a-tb-wa" href="https://api.whatsapp.com/send?phone=6285691344323&text=Hai%20Homemin ,%20tolong%20bantu%20saya :)" target="_blank" title="WA">
+					<a class="a-tb-wa" href="https://api.whatsapp.com/send?phone=6287814091972&text=Hai%20Homemin ,%20tolong%20bantu%20saya :)" target="_blank" title="WA">
 						<i class="fa fa-whatsapp"></i>
 						<font style="color:#fff;">+62 878-1409-1972</font>
 					</a>
