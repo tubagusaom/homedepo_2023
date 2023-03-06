@@ -23,7 +23,7 @@
             <!-- <i class="fa fa-phone"></i> -->
             <span class="a-tb-wa">
               <i class="fa fa-whatsapp" style="font-size:14px;">
-                <a class="tdn" href="https://api.whatsapp.com/send?phone=6285691344323&text=Hai%20Homemin ,%20tolong%20bantu%20saya :)" target="_blank" title="WA">
+                <a class="tdn" href="https://api.whatsapp.com/send?phone=6287814091972&text=Hai%20Homemin ,%20tolong%20bantu%20saya :)" target="_blank" title="WA">
                   <font style="color:#1c2a5f;">+62 878-1409-1972</font>
                 </a>
               </i>
