@@ -5,7 +5,7 @@ if (!defined('BASEPATH'))
 
 $active_group = 'default';
 
-$env = 'lokal'; // lokal atau online
+$env = 'online'; // lokal atau online
 if ($env == 'lokal') {
 	$koneksi1 = 'extra';
 	$koneksi2 = 'default';
