@@ -1,17 +1,17 @@
 <style media="screen">
-.tdn{
-  text-decoration: none!important;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: bold!important;
-}
+  .tdn {
+    text-decoration: none !important;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: bold !important;
+  }
 </style>
 
 <div class="header-container container">
   <div class="header-row">
     <div class="header-column">
       <div class="header-logo">
-        <a href="<?=base_url()?>">
-          <img alt="Porto" width="76" height="56" src="<?=base_url()?>assets/img/logo_transparent.png">
+        <a href="<?= base_url() ?>">
+          <img alt="Porto" width="76" height="56" src="<?= base_url() ?>assets/img/logo_transparent.png">
         </a>
       </div>
     </div>
@@ -23,7 +23,7 @@
             <!-- <i class="fa fa-phone"></i> -->
             <span class="a-tb-wa">
               <i class="fa fa-whatsapp" style="font-size:14px;">
-                <a class="tdn" href="https://api.whatsapp.com/send?phone=6287814091972&text=Hai%20Homemin ,%20tolong%20bantu%20saya :)" target="_blank" title="WA">
+                <a class="tdn" href="https://api.whatsapp.com/send?phone=6285691344323&text=Hai%20Homemin ,%20tolong%20bantu%20saya :)" target="_blank" title="WA">
                   <font style="color:#1c2a5f;">+62 878-1409-1972</font>
                 </a>
               </i>
@@ -43,13 +43,13 @@
                   <font style="color:#1c2a5f;"> +62 812-3022-2470</font>
                 </a>
               </i>
-            <span>
+              <span>
 
-            <span class="split"></span>
+                <span class="split"></span>
 
-            <a class="tdn" href="https://homedepo.co.id" target="_blank">
-              <font style="color:#1c2a5f;"> TENTANG KAMI </font>
-            </a>
+                <a class="tdn" href="https://homedepo.co.id" target="_blank">
+                  <font style="color:#1c2a5f;"> TENTANG KAMI </font>
+                </a>
           </div>
 
           <?php if (isset($nama_user)) { ?>
@@ -65,12 +65,12 @@
                 <div class="dropdownmenu-wrapper">
                   <div class="cart-totals" style="text-align:left;">
                     <span>
-                      <a href="<?=base_url()?>buyer"><i class="fa fa-user"></i> Saya</a>
+                      <a href="<?= base_url() ?>buyer"><i class="fa fa-user"></i> Saya</a>
                     </span>
                   </div>
                   <div class="cart-totals" style="text-align:left;">
                     <span>
-                      <a href="<?=base_url()?>users/logout"><i class="fa fa-sign-out"></i> Keluar</a>
+                      <a href="<?= base_url() ?>users/logout"><i class="fa fa-sign-out"></i> Keluar</a>
                     </span>
                   </div>
                 </div>
@@ -79,18 +79,18 @@
 
 
 
-          <div class="cart-dropdown">
-            <a href="<?=base_url()?>buyer/keranjang" class="cart-dropdown-icon">
-              <i class="minicart-icon" style="color:#1c2a5f"></i>
-              <span class="cart-info" style="top:45%;">
-                <span class="cart-qty" style="color:#fff;">
-                  <?=$total_keranjang?>
+            <div class="cart-dropdown">
+              <a href="<?= base_url() ?>buyer/keranjang" class="cart-dropdown-icon">
+                <i class="minicart-icon" style="color:#1c2a5f"></i>
+                <span class="cart-info" style="top:45%;">
+                  <span class="cart-qty" style="color:#fff;">
+                    <?= $total_keranjang ?>
+                  </span>
+                  <!-- <span class="cart-text">item(s)</span> -->
                 </span>
-                <!-- <span class="cart-text">item(s)</span> -->
-              </span>
-            </a>
+              </a>
 
-            <!-- <div class="cart-dropdownmenu right">
+              <!-- <div class="cart-dropdownmenu right">
               <div class="dropdownmenu-wrapper">
                 <div class="cart-totals">
                   Lihat <span>Keranjang</span>
@@ -98,13 +98,13 @@
               </div>
             </div> -->
 
-          </div>
+            </div>
 
 
 
-        <?php }else{ ?>
+          <?php } else { ?>
 
-          <!-- <div class="cart-dropdown">
+            <!-- <div class="cart-dropdown">
             <a href="#" class="cart-dropdown-icon" id="login-btn" data-toggle="modal" data-target="#myModal" title="Login / Masuk">
               <i class="fa fa-sign-in"></i>
               <span class="cart-info" style="top:45%;font-size:12px;">
@@ -112,18 +112,18 @@
             </a>
           </div> -->
 
-          <div class="cart-dropdown">
-            <a href="#"  id="login-btn" data-toggle="modal" data-target="#myModal" class="cart-dropdown-icon">
-              <i class="minicart-icon" style="color:#1c2a5f"></i>
-              <span class="cart-info" style="top:45%;">
-                <span class="cart-qty" style="color:#fff;">
-                  0
+            <div class="cart-dropdown">
+              <a href="#" id="login-btn" data-toggle="modal" data-target="#myModal" class="cart-dropdown-icon">
+                <i class="minicart-icon" style="color:#1c2a5f"></i>
+                <span class="cart-info" style="top:45%;">
+                  <span class="cart-qty" style="color:#fff;">
+                    0
+                  </span>
+                  <!-- <span class="cart-text">item(s)</span> -->
                 </span>
-                <!-- <span class="cart-text">item(s)</span> -->
-              </span>
-            </a>
+              </a>
 
-            <!-- <div class="cart-dropdownmenu right">
+              <!-- <div class="cart-dropdownmenu right">
               <div class="dropdownmenu-wrapper">
                 <div class="cart-totals">
                   Lihat <span>Keranjang</span>
@@ -131,9 +131,9 @@
               </div>
             </div> -->
 
-          </div>
+            </div>
 
-        <?php } ?>
+          <?php } ?>
 
           <!-- <div class="cart-dropdown">
             <a href="#" class="cart-dropdown-icon">
@@ -153,7 +153,7 @@
                     </a>
                     <figure class="product-image-area">
                       <a href="demo-shop-8-product-details.html" title="Product Name" class="product-image">
-                        <img src="<?=base_url()?>assets/img/demos/products/thumbs/cart-product1.jpg" alt="Product Name">
+                        <img src="<?= base_url() ?>assets/img/demos/products/thumbs/cart-product1.jpg" alt="Product Name">
                       </a>
                     </figure>
                     <div class="product-details-area">
@@ -171,7 +171,7 @@
                     </a>
                     <figure class="product-image-area">
                       <a href="demo-shop-8-product-details.html" title="Product Name" class="product-image">
-                        <img src="<?=base_url()?>assets/img/demos/products/thumbs/cart-product1.jpg" alt="Product Name">
+                        <img src="<?= base_url() ?>assets/img/demos/products/thumbs/cart-product1.jpg" alt="Product Name">
                       </a>
                     </figure>
                     <div class="product-details-area">
@@ -189,7 +189,7 @@
                     </a>
                     <figure class="product-image-area">
                       <a href="demo-shop-8-product-details.html" title="Product Name" class="product-image">
-                        <img src="<?=base_url()?>assets/img/demos/products/thumbs/cart-product1.jpg" alt="Product Name">
+                        <img src="<?= base_url() ?>assets/img/demos/products/thumbs/cart-product1.jpg" alt="Product Name">
                       </a>
                     </figure>
                     <div class="product-details-area">
@@ -208,7 +208,7 @@
                     </a>
                     <figure class="product-image-area">
                       <a href="demo-shop-8-product-details.html" title="Product Name" class="product-image">
-                        <img src="<?=base_url()?>assets/img/demos/products/thumbs/cart-product2.jpg" alt="Product Name">
+                        <img src="<?= base_url() ?>assets/img/demos/products/thumbs/cart-product2.jpg" alt="Product Name">
                       </a>
                     </figure>
                     <div class="product-details-area">
@@ -238,7 +238,7 @@
 
         <!-- <div class="header-search">
           <a href="#" class="search-toggle"><i class="fa fa-search"></i></a>
-          <form action="<?=base_url()?>search/show/" method="GET">
+          <form action="<?= base_url() ?>search/show/" method="GET">
 
             <div class="header-search-wrapper">
 

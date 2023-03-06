@@ -206,13 +206,13 @@
 
 
 
-					<div class="modal-footer center">
+					<!-- <div class="modal-footer center">
 						<div class="center" style="padding-bottom:10px;font-weight:bold;color:#1c2a5f">
 							Atau Masuk Dengan
 						</div>
 
 						<div class="fb-login-button" data-width="350" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
-					</div>
+					</div> -->
 
 
 				</div>
