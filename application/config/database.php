@@ -1,15 +1,15 @@
 <?php
 
 if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+	exit('No direct script access allowed');
 
 $active_group = 'default';
 
-$env = 'online'; // lokal atau online
-if($env=='lokal'){
+$env = 'lokal'; // lokal atau online
+if ($env == 'lokal') {
 	$koneksi1 = 'extra';
 	$koneksi2 = 'default';
-}else{
+} else {
 	$koneksi1 = 'default';
 	$koneksi2 = 'extra';
 }
