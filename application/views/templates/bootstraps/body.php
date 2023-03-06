@@ -203,6 +203,52 @@
     </div>
   </div>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 normal">
+
+        <div class="mb-xlg tabs home-products-tab">
+
+          <ul class="nav nav-links">
+            <li class="active">
+              <a href="#ListPartner" data-toggle="tab">PARTNER</a>
+            </li>
+            <!-- <li>
+            <a href="#Diskon" data-toggle="tab">Kejar Diskon</a>
+          </li> -->
+          </ul>
+
+          <!-- <h2 class="slider-title">
+            <span class="inline-title">LIST PARTNER</span>
+            <span class="line"></span>
+          </h2> -->
+
+          <div class="owl-carousel owl-theme manual clients-carousel owl-no-narrow ">
+            <a href="#" title="Brand Name" class="client">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/haston.png" alt="partner homedepo" style="width:160px!important;margin-top:10px!important;margin-left:30px!important;">
+            </a>
+            <a href="#" title="Brand Name" class="client">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/mitra10.png" alt="partner homedepo" style="width:150px!important;margin-left:50px!important;">
+            </a>
+            <a href="#" title="Brand Name" class="client">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/csa.png" alt="partner homedepo" style="width:110px!important;margin-left:50px!important;">
+            </a>
+            <a href="#" title="Brand Name" class="client">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/kulitbatu.png" alt="partner homedepo" style="width:100px!important;margin-left:50px!important;">
+            </a>
+            <a href="#" title="Brand Name" class="client">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/tukangbagus.png" alt="partner homedepo" style="width:70px!important;margin-left:50px!important;">
+            </a>
+            <a href="#" title="Brand Name" class="client">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/gradana.png" alt="partner homedepo" style="width:90px!important;margin-left:20px!important;">
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <div class="container" style="padding-top:20px;">
     <div class="row">
       <div class="col-md-12 normal">
@@ -311,42 +357,7 @@
   </div>
 
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 normal">
 
-        <div class="mb-xlg">
-          <h2 class="slider-title">
-            <span class="inline-title">LIST PARTNER</span>
-            <span class="line"></span>
-            <!-- <a href="#" class="view-all">View All</a> -->
-          </h2>
-
-          <div class="owl-carousel owl-theme manual clients-carousel owl-no-narrow ">
-            <a href="#" title="Brand Name" class="client">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/haston.png" alt="partner homedepo" style="width:160px!important;margin-top:10px!important;margin-left:30px!important;">
-            </a>
-            <a href="#" title="Brand Name" class="client">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/mitra10.png" alt="partner homedepo" style="width:150px!important;margin-left:50px!important;">
-            </a>
-            <a href="#" title="Brand Name" class="client">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/csa.png" alt="partner homedepo" style="width:110px!important;margin-left:50px!important;">
-            </a>
-            <a href="#" title="Brand Name" class="client">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/kulitbatu.png" alt="partner homedepo" style="width:100px!important;margin-left:50px!important;">
-            </a>
-            <a href="#" title="Brand Name" class="client">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/tukangbagus.png" alt="partner homedepo" style="width:70px!important;margin-left:50px!important;">
-            </a>
-            <a href="#" title="Brand Name" class="client">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/partner/gradana.png" alt="partner homedepo" style="width:90px!important;margin-left:20px!important;">
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
 
   <!-- posisi pop up iklan -->
 
