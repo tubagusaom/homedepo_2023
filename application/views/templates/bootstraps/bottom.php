@@ -116,7 +116,7 @@
 
   <div class="navbarmenutb" id="tbNavbar">
 
-    <a href="https://www.homedepo.co.id/" target="_blank" class="copyrightmenu" style="">
+    <a href="https://www.homedepo.co.id/" target="_blank" class="copyrightmenu">
       ©Copyright <?= $aplikasi->singkatan_unit ?>
       <script>
         var CurrentYear = new Date().getFullYear()

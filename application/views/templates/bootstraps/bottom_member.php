@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="footer-ribbon">
-        <span><?=$aplikasi->singkatan_unit?></span>
+        <span><?= $aplikasi->singkatan_unit ?></span>
       </div>
 
       <div class="col-md-3">
@@ -34,10 +34,18 @@
         <div class="contact-details">
           <h4>Contact Information</h4>
           <ul class="contact">
-            <li><p><i class="fa fa-map-marker"></i> <strong>Address:</strong><br> <?=$aplikasi->alamat?></p></li>
-            <li><p><i class="fa fa-phone"></i> <strong>Phone:</strong><br> <?=$aplikasi->no_telpon?></p></li>
-            <li><p><i class="fa fa-envelope-o"></i> <strong>Email:</strong><br> <a href="<?=$aplikasi->alamat_email?>"><?=$aplikasi->alamat_email?></a></p></li>
-            <li><p><i class="fa fa-clock-o"></i> <strong>Working Days/Hours:</strong><br> Mon - Sun / 9:00AM - 8:00PM</p></li>
+            <li>
+              <p><i class="fa fa-map-marker"></i> <strong>Address:</strong><br> <?= $aplikasi->alamat ?></p>
+            </li>
+            <li>
+              <p><i class="fa fa-phone"></i> <strong>Phone:</strong><br> <?= $aplikasi->no_telpon ?></p>
+            </li>
+            <li>
+              <p><i class="fa fa-envelope-o"></i> <strong>Email:</strong><br> <a href="<?= $aplikasi->alamat_email ?>"><?= $aplikasi->alamat_email ?></a></p>
+            </li>
+            <li>
+              <p><i class="fa fa-clock-o"></i> <strong>Working Days/Hours:</strong><br> Mon - Sun / 9:00AM - 8:00PM</p>
+            </li>
           </ul>
         </div>
       </div>
@@ -111,21 +119,28 @@
             </div>
           </form>
         </div> -->
+
       </div>
     </div>
   </div>
   <div class="footer-copyright">
     <div class="container">
-      <a href="<?=base_url()?>" class="logo">
-        <img alt="Porto Website Template" class="img-responsive" src="<?=base_url()?>assets/img/demos/logo-footer.png">
+      <a href="<?= base_url() ?>" class="logo">
+        <img alt="Porto Website Template" class="img-responsive" src="<?= base_url() ?>assets/img/demos/logo-footer.png">
       </a>
       <ul class="social-icons">
         <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
         <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
         <li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
       </ul>
-      <img alt="Payments" src="<?=base_url()?>assets/img/demos/payments.png" class="footer-payment">
-      <p class="copyright-text">© Copyright 2021. All Rights Reserved.</p>
+      <img alt="Payments" src="<?= base_url() ?>assets/img/demos/payments.png" class="footer-payment">
+      <p class="copyright-text">© Copyright
+        <script>
+          var CurrentYear = new Date().getFullYear()
+          document.write(CurrentYear)
+        </script>
+        . All Rights Reserved.
+      </p>
     </div>
   </div>
 </footer>
@@ -188,4 +203,5 @@
 
 
 </body>
+
 </html>
