@@ -349,6 +349,20 @@
 </script> -->
 
 
+
+<!-- Google tag (gtag.js) homedepo.id -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DY74SR93J1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-DY74SR93J1');
+</script>
+
 <!-- Google tag (gtag.js) homedepo.co.id -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215570914-1"></script>
 <script>
