@@ -1,41 +1,51 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Product_model extends MY_Model
+class Product_model extends MY_Model
 {
 
-  function get_product($id){
-      $this->db->where('id_member',$id);
-      $this->db->order_by('id','DESC');
-      // $this->db->limit(1);
-      return $this->db->get(kode_tbl().'product')->result();
+  function get_product($id)
+  {
+    $this->db->where('id_member', $id);
+    $this->db->order_by('id', 'DESC');
+    // $this->db->limit(1);
+    return $this->db->get(kode_tbl() . 'product')->result();
   }
 
-  function detail_product($id){
+  function product_id($id)
+  {
+    $this->db->where('id', $id);
+    // $this->db->limit(1);
+    return $this->db->get(kode_tbl() . 'product')->row();
+  }
 
+  function detail_product($id)
+  {
     $this->db->select(
       '
         a.*,
         b.kategori,
         c.sub_kategori,
         d.member
-      ');
-      $this->db->from(kode_tbl().'product'.' a');
-      $this->db->join(kode_tbl().'kategori b','b.id=a.id_kategori','left');
-      $this->db->join(kode_tbl().'sub_kategori c','c.id=a.id_sub_kategori','left');
-      $this->db->join(kode_tbl().'members d','a.id_member=d.id');
+      '
+    );
+    $this->db->from(kode_tbl() . 'product' . ' a');
+    $this->db->join(kode_tbl() . 'kategori b', 'b.id=a.id_kategori', 'left');
+    $this->db->join(kode_tbl() . 'sub_kategori c', 'c.id=a.id_sub_kategori', 'left');
+    $this->db->join(kode_tbl() . 'members d', 'a.id_member=d.id');
 
-      $this->db->where('a.id',$id);
-      // $this->db->order_by('id','DESC');
-      // $this->db->limit(1);
-      return $this->db->get(kode_tbl().'product')->row();
+    $this->db->where('a.id', $id);
+    // $this->db->order_by('id','DESC');
+    // $this->db->limit(1);
+    return $this->db->get(kode_tbl() . 'product')->row();
   }
 
-  function file_product_detail($id){
+  function file_product_detail($id)
+  {
 
     // var_dump($id); die();
 
-    $this->db->from('t_repositori'.' a');
-    $this->db->where('a.id_product',$id);
+    $this->db->from('t_repositori' . ' a');
+    $this->db->where('a.id_product', $id);
     $query = $this->db->get()->result();
 
     return $query;
@@ -43,22 +53,21 @@ Class Product_model extends MY_Model
 
   }
 
-  function show_filter_product($k,$id_k,$k1,$id_k1,$k2,$id_k2){
+  function show_filter_product($k, $id_k, $k1, $id_k1, $k2, $id_k2)
+  {
 
     // var_dump($k); die();
 
     if (empty($k)) {
-      $f="...";
-    }
-    else {
-      $f=$k;
+      $f = "...";
+    } else {
+      $f = $k;
     }
 
     if (empty($k1)) {
-      $f1="...";
-    }
-    else {
-      $f1=$k1;
+      $f1 = "...";
+    } else {
+      $f1 = $k1;
     }
     // echo "
     //   cari berdasarkan kategori <br>
@@ -73,13 +82,13 @@ Class Product_model extends MY_Model
     $sub_id   = $id_k2;
 
 
-    if (!empty($menu_id) AND !empty($kat_k) AND !empty($sub_id)) {
+    if (!empty($menu_id) and !empty($kat_k) and !empty($sub_id)) {
       $ac = "id_sub_kategori";
       $where1 = $this->db->where('a.id_sub_kategori', $id_k2);
-    }elseif (!empty($menu_id) AND !empty($kat_k)) {
+    } elseif (!empty($menu_id) and !empty($kat_k)) {
       $ac = "id_kategori";
       $where1 = $this->db->where('a.id_kategori', $id_k1);
-    }elseif (!empty($menu_id)) {
+    } elseif (!empty($menu_id)) {
       $ac = "id_menu_kategori";
       $where1 = $this->db->where('a.id_menu_kategori', $id_k);
     }
@@ -87,16 +96,17 @@ Class Product_model extends MY_Model
     // var_dump($wheres); die();
 
     $this->db->select(
-    '
+      '
       a.*,
       b.id AS id_repo,
       b.nama_file,
       c.member
-    ');
-    $this->db->from(kode_tbl().'product'.' a');
+    '
+    );
+    $this->db->from(kode_tbl() . 'product' . ' a');
 
-    $this->db->join('t_repositori b','a.id=b.id_product');
-    $this->db->join(kode_tbl().'members c','a.id_member=c.id');
+    $this->db->join('t_repositori b', 'a.id=b.id_product');
+    $this->db->join(kode_tbl() . 'members c', 'a.id_member=c.id');
     // $this->db->join(kode_tbl().'product_favorite c','a.id=c.id_product','left');
     // $this->db->join(kode_tbl().'skema b', 'a.skema_sertifikasi = b.id', 'left');
 
@@ -112,38 +122,38 @@ Class Product_model extends MY_Model
 
     $query = $this->db->get();
     return $query->result();
-
   }
 
 
-  public function get_all_product($perpage, $offset,$search="") {
+  public function get_all_product($perpage, $offset, $search = "")
+  {
 
     // var_dump($search); die();
 
-     if($search ==""){
-         $this->db->order_by('id', 'ASC');
-         $this->db->limit($perpage);
-         $this->db->offset($offset);
-         // $this->db->where('id_group_users',6);
-         $query = $this->db->get(kode_tbl().'product a');
-     }else{
-         // $this->db->where('id_group_users',6);
-         $this->db->select(
-         '
+    if ($search == "") {
+      $this->db->order_by('id', 'ASC');
+      $this->db->limit($perpage);
+      $this->db->offset($offset);
+      // $this->db->where('id_group_users',6);
+      $query = $this->db->get(kode_tbl() . 'product a');
+    } else {
+      // $this->db->where('id_group_users',6);
+      $this->db->select(
+        '
            a.*,
            b.id AS id_repo,
            b.nama_file,
            c.member
-         ');
-         $this->db->like('a.nama_product', $search);
-         $this->db->order_by('a.id', 'ASC');
-         $this->db->limit($perpage);
-         $this->db->offset($offset);
-         $this->db->join('t_repositori b','a.id=b.id_product');
-         $this->db->join(kode_tbl().'members c','a.id_member=c.id');
-         $query = $this->db->get(kode_tbl().'product a');
-     }
-     return $query->result();
- }
-
+         '
+      );
+      $this->db->like('a.nama_product', $search);
+      $this->db->order_by('a.id', 'ASC');
+      $this->db->limit($perpage);
+      $this->db->offset($offset);
+      $this->db->join('t_repositori b', 'a.id=b.id_product');
+      $this->db->join(kode_tbl() . 'members c', 'a.id_member=c.id');
+      $query = $this->db->get(kode_tbl() . 'product a');
+    }
+    return $query->result();
+  }
 }

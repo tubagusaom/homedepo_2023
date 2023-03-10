@@ -16,7 +16,7 @@ if ($env == 'lokal') {
 
 
 $active_record = TRUE;
-$db[$koneksi1]['hostname'] = 'localhost'; //103.145.226.74
+$db[$koneksi1]['hostname'] = '103.145.226.74'; //103.145.226.74
 $db[$koneksi1]['username'] = 'homedepo_tb'; //homedepo_tb
 $db[$koneksi1]['password'] = 'bismIll@h'; //bismIll@h
 $db[$koneksi1]['database'] = 'homedepo_live_db'; //homedepo_db
