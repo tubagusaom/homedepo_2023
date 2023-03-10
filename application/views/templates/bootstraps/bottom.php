@@ -348,8 +348,9 @@
   ga('send', 'pageview');
 </script> -->
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-215570914-1"></script>
+
+<!-- Google tag (gtag.js) homedepo.co.id -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215570914-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
 
@@ -359,7 +360,7 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-215570914-1');
-</script>
+</script> -->
 
 
 
