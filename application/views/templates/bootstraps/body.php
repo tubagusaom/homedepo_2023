@@ -189,11 +189,15 @@
 
           <div class="owl-carousel owl-theme manual clients-carousel owl-no-narrow " style="padding-top:10px;padding-left:20px;">
             <a id="login-btn" data-toggle="modal" data-target="#myModal" href="#" title="Bazar" class="client" style="width:100px!important;">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/icons/kategori/bazar_hd.jpg" alt="kategori homedepo">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/icons/kategori/icon_bazar_hd.jpeg" alt="kategori homedepo">
               <!-- <font style="padding-left:10px;">Bazar</font> -->
             </a>
-            <a id="login-btn" data-toggle="modal" data-target="#myModal" href="#" title="Keuangan" class="client" style="width:100px!important;">
-              <img class="img-responsive" src="<?= base_url() ?>assets/img/icons/kategori/keuangan_hd.jpg" alt="kategori homedepo">
+            <a id="login-btn" data-toggle="modal" data-target="#myModal" href="#" title="Pembiayaan" class="client" style="width:100px!important;">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/icons/kategori/icon_pembiayaan_hd.jpeg" alt="kategori homedepo">
+              <!-- <font style="">Keuangan</font> -->
+            </a>
+            <a id="login-btn" data-toggle="modal" data-target="#myModal" href="#" title="Tips" class="client" style="width:100px!important;">
+              <img class="img-responsive" src="<?= base_url() ?>assets/img/icons/kategori/icon_tips_hd.jpeg" alt="kategori homedepo">
               <!-- <font style="">Keuangan</font> -->
             </a>
           </div>
